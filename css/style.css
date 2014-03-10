@@ -1,0 +1,64 @@
+body {
+  margin: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body .logged-in {
+  display: none;
+}
+
+body.logged-in {
+  background: green;
+  color: #fff;
+  text-align: center;
+  font-size: 200%;
+}
+
+body.logged-in .logged-in {
+  display: block;
+}
+
+body.logged-in .login {
+  display: none;
+}
+
+h2 {
+  color: red;
+}
+
+.error-message {
+  opacity: 0;
+}
+
+.error-message.is-visible {
+  opacity: 1;
+}
+
+#password, #email {
+  font-size: 200%;
+  border: 2px solid #cecece;
+}
+
+#password.error, #email.error {
+  background: red;
+  color: #fff;
+}
+
+form > ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  display: block;
+  margin: 0 0 30px 0;
+}
+
+#login {
+  font-size: 500px;
+}
