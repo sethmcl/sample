@@ -5,7 +5,7 @@ function validate(selector) {
   var $el = $(selector), $error = $('.error-message');
 
   return function () {
-    if ($el.val().trim().length === 0) {
+    if ($el.val() === '') {
       $el.addClass('error');
       $el.focus();
 
